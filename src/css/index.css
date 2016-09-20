@@ -1,0 +1,112 @@
+/*竖直的导航栏，轮播图，公司广告*/
+.carousel{ width: 100%; float: left; background: #ededed;}
+.carousel .bisbox{ margin:0 auto; width: 1200px; height: 628px; background: darkseagreen; position: relative; background: url(img/huabei.png) no-repeat bottom; margin-bottom: 4px;}
+.carousel .bisbox .menu_ver{ width: 135px; height: 500px; background:#940206; position: absolute; top:-29px;}
+.bisbox .menu_ver  a{display:inline-block; width: 135px; height: 33px; line-height: 33px; text-align: center; font-size: 14px; color: #fff; border-bottom: 1px solid #a73033; border-top: 1px solid #880101;}
+.bisbox .menu_ver  a:hover{ color:#940206; background: #fff;}
+.bisbox .menu_ver .first_a{ border-top: none;}
+.bisbox .menu_ver .last:hover{  background:#940206;}
+.bisbox .menu_ver .last_a{ border-bottom: none; height: 2px;  background:#940206;}
+.bisbox .menu_ver .last_a:hover{background:#940206;}
+
+.carousel .bisbox #box{ width: 1065px; height:471px; float: right; background: cornflowerblue; position: relative; overflow: hidden;}
+#list {height: 500px; position: absolute; left: 0; top: 0;}
+#list li { width: 1065px; height: 500px; float: left; }
+#list img {width: 1065px; height: 500px;}
+#list2 {width: 100px; height: 15px; position: absolute; left: 100px; bottom: 25px;}
+#list2 li {width: 12px; height: 12px; background: #fff; float: left; margin-left: 8px; text-allLign: center; cursor: pointer;}
+				
+/*三个小广告	*/
+.carousel .bisbox .guanggao{ width: 192px; height: 426; position: absolute; top:16px; right:0;}	
+.bisbox .guanggao img{ margin-top: 10px; border: 1px solid #ccc;}		
+				
+/*下面的商标列表*/				
+.carousel .bisbox .list_s{ float: left; width: 1200px; height: 145px; border: 1px solid #e7e7e8; background: #fff;}
+.bisbox .list_s span{ float: right; font-size: 12px; padding-right: 17px; padding-top: 16px;}
+.bisbox .list_s span a{ color: #000;}
+.bisbox .list_s li{ float: left; margin: 39px 15px 0 15px;}
+.bisbox .list_s  img{width: 110px; height: 70px;  border: 1px solid #e9e8e8;}				
+
+/*导航结束,正文开始,热卖	*/
+.hotsell_box{ width: 100%;  float: left; background: #ededed;}
+.hotsell_box .hot_sell{ margin: 0 auto; width: 1200px; height:334px; margin-bottom: 10px;}
+.hot_sell .hot_list{ float:left; width: 870px; height: 334px; border: 1px solid #e7e7e8; border-bottom: none; background: #fff;}			
+
+.hot_list .header{ float: left; width:840px; height: 35px; border-bottom: 2px solid #bb0000; margin-left: 15px; margin-top: 8px;}				
+.hot_list .header li{float: left; width: 122px; height: 35px; border-right: 1px solid #dfdfdf; font-size: 18px; line-height: 35px; text-align: center;}
+.hot_list .header .last_li{ border-right: none;}
+.hot_list .header li.active{font-weight:bold; color:#fff; background: #bb0000;}
+			
+.hot_list .content{ float: left; text-align:center; font-size: 12px; line-height: 24px;}
+.hot_list .content strong{ color: #cf0f4c;}
+.hot_list .content dl{float: left; width: 215px;}		
+
+.hot_sell .hot_img{ float:right; width: 300px; height: 330px; border: 1px solid #e3e3e3; background: #fff;}	
+.hot_sell .hot_img img{ width:300px; height: 150px;}
+
+/*会员促销*/
+.sales_box{ float: left; width: 100%; height:400px; background: #ededed url(img/bg_yinying.gif) no-repeat bottom;}
+.sales_box .sales{ margin: 0 auto; width: 1177px; height: 385px; background: #fff ; border: 1px solid #e7e7e8; padding: 0 11px 0 11px; margin-bottom: 15px;}
+.sales_box .sales .sales_top{ float: left; width: 1170px; padding-top: 7px; border-bottom: 1px solid #b10000; position: relative;}
+.sales .sales_top h3{ display:inline-block; font-size: 17px; line-height: 35px; color: #000; padding-left: 5px;}
+.sales .sales_top em{ display:inline-block; font-size: 9px; color: #cbc9d3; line-height: 35px; padding-left: 6px;}
+.sales .sales_top span{ display: block; width: 235px; height: 3px; background: #b10000; position: absolute; left: 0; bottom: -4px;}
+/*到这里,这一部分代码是共用的*/
+.sales ul {float: left; padding: 12px 0 10px 0;}
+.sales ul li{float: left;}
+.mouseover{ opacity: 0.5;}
+/*手机数码*/
+.cell_box{height: 564px;}
+.cell_box .cell{ height: 548px;}
+.cell_box .cell .div_right{ float: right;  color: #888; padding-top: 10px;}
+.cell .div_right .sub{display:inline-block; font-size: 12px; color: #888; line-height: 30px; padding:  0 14px 0 12px;}
+	/*轮播*/
+.lunbo_img { float: left; width: 260px; height: 480px; padding-top: 10px; }
+.lunbo_img img{ width: 260px; height: 480px; display: none; }
+
+.sales_right{ float: right; width: 894px; height: 481px; padding: 12px 13px 7px 0;}
+.sales_right li{ float: left; width: 178px; height: 235px; border-right: 1px solid #e1e1e1; border-bottom: 1px solid #e1e1e1 ;}
+.sales_right .no_bt{ border-bottom: none;}
+.sales_right .img{ display:inline-block; padding-left: 14px;}
+.sales_right p{ padding-left: 10px;}
+.sales_right p a{ color: #000; font-size: 10px; line-height: 20px;}
+.sales_right b{ display:inline-block; width:178px; color: #cf0f4c; font-size: 11px; padding-top: 4px; text-align: center;}
+
+/*厨具用品*/
+.closhes_box{ width: 100%; float: left; background: #ededed;}
+.closhes_box .closhes{ width: 1200px; margin: 0 auto;}
+
+.closhes_onebox{float: left; background: #fff url(img/bg_yinying1.jpg) no-repeat bottom; margin-right: 10px;}
+.closhes_onebox .closhes_one{ width: 560px; float: left; padding: 0 14px 15px 14px; border: 1px solid #e7e7e8;}
+.closhes_twobox{float: right; margin: 0 0 0 10px;}
+.closhes_top{ float: left; width: 560px; padding-top: 7px; border-bottom: 1px solid #b10000; position: relative;}
+.closhes_top h3{display:inline-block; font-size: 17px; line-height: 35px; color: #000; padding-left: 5px;}
+.closhes_top em{ display:inline-block; font-size: 9px; color: #cbc9d3; line-height: 35px; padding-left: 6px;}
+.closhes_top span{ display: block; width: 235px; height: 3px; background: #b10000; position: absolute; left: 0; bottom: -4px;}
+.closhes_top .closhes_topri{ float: right;  color: #888; padding-top: 10px;}
+.closhes_top .sub{display:inline-block; font-size: 12px; color: #888; line-height: 30px; padding: 0 12px;}
+
+.closhes_data{ float:left; width: 530px; height: 150px; margin-top: 3px; margin-bottom: 10px;}
+.closhes_data img{ display: none; width: 530px; height: 150px;}
+
+
+.kuang { padding-bottom: 20px;}
+.kuang li{ float:left; width: 185px; height: 235px; border-right: 1px solid #e1e1e1; border-bottom: 1px solid #e1e1e1 ;}
+.sales_right .kai{ display:inline-block; padding-left: 14px;}
+.kuang p{ padding-left: 10px;}
+.kuang p a{ color: #000; font-size: 10px; line-height: 20px;}
+.kuang b{ display:inline-block; width:178px; color: #cf0f4c; font-size: 11px; padding-top: 4px; text-align: center;}
+.kuang .no_bt{ border-bottom: none;}
+.kuang .no_bt img{ padding-top: 5px;}
+
+/*热门商品*/
+.hotgood_box{ float: left; width: 100%; background: #ededed ;}
+.hotgood_box .hotgood{ margin: 0 auto; width: 1178px; height: 400px; background: #fff; padding: 0 10px 0 10px; border: 1px solid #e7e7e8;}
+.hotgood_box .hotgood ul{ float:left; width: 103px; height: 137px; border: 1px solid #e1e1e1; margin: 0 3px; padding: 33px 0 0 7px;}
+.hotgood ul li{ font-size: 12px; line-height: 20px; padding-left: 14px;} 
+.hotgood ul li a{ color: #9e9e9f;}
+.hotgood .hong_shop a{font-size: 14px; color: #b10000; line-height: 40px;}
+.hotgood .hong_shop { padding-left: 0px;}
+.hotgood span{ display: block; width: 1200px; height: 17px; padding: 11px 0 17px 0; font-size: 17px; color: #000; text-align: center;}
+
+

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的购物车</title>
+		<link tyle="text/css" rel="stylesheet" href="../css/common.css" />
+		<link tyle="text/css" rel="stylesheet" href="../css/base.css" />
+		<link tyle="text/css" rel="stylesheet" href="../css/reset.css" />
+		<link tyle="text/css" rel="stylesheet" href="../css/shopcar.css" />
+		<script src="../assets/jquery-1.12.0.js"></script>
+		<script src="../js/common.js"></script>
+		
+	</head>
+	<body>
+	<form>
+   	<!-- 最顶端-->
+    <div class="top-header">
+        <div class="t_menu" id="shoppingCart">
+        	<div class="hello">
+        		您好：欢迎光临天狗商城！[
+        		<a href="http://www.tg0591.com/iusers/loginp.aspx">请登录</a>
+        		],新用户? [
+        		<a href="http://www.tg0591.com/iusers/loginp.aspx">免费注册</a>
+        		] 
+        	</div>
+    		<span class="shop">
+    			<span class="shopleft">
+    				<a href="#">购物车<span class="red1">0</span>件</a>
+    			</span>
+    				<a class="sub" href="#">我的订单</a>|
+    				<a class="sub" href="#">网站地图</a>|
+    				<a class="sub" href="#">帮助中心</a>| 
+    				<a href="#">加入收藏</a> | 
+    				<a href="#">设为首页</a>
+    		</span>
+        </div>
+    </div>
+           <!-- 搜索框-->
+    <div class="top">
+        <div class="header">
+            <div class="logo">
+                <a href="htp://index.html/">
+                    <img src="../img/logo.jpg" titile="天狗商城">
+                </a>
+            </div>
+            <div class="seach">
+                <dl>
+                    <dt class="shangping_left">
+                        <span class="shangping_right">商品</span>
+                    </dt>
+                    <dd> 
+                    	<dl>                   		
+		                	<dt>
+			                	<input type="text" class="input-text" placeholder="多搜搜，意外惊喜等你拿" />
+			                	<div class="search_right">
+			                		<span>
+			                			<a href="#" class="search">搜索</a>
+			                		</span>
+			                	</div>
+		                	</dt>
+		                	<dd class="suol">
+                        		<a href="#" target="_blank">手机</a>/<a href="#" target="_blank">钟表</a>/<a href="#" target="_blank">家电</a>/<a href="#" target="_blank">电脑</a>/<a href="#" target="_blank">男装</a>/<a href="#" target="_blank">女装</a>/<a href="#" target="_blank">灯具</a>/<a href="#" target="_blank">童装</a>/<a href="#" target="_blank">儿童玩具</a>/<a href="#" target="_blank">笔记本</a>/<a href="#" target="_blank">平板</a>/<a href="#" target="_blank">相机</a>/<a href="#" target="_blank">鞋</a> 
+                			<dd>
+                    	</dl>
+                    </dd>
+                    
+                </dl>
+            </div>
+        </div>
+    </div>
+    <!--top结束-->
+    <!--导航栏开始-->
+    <div class="menu-neuy">
+        <div class="menu">
+            <div class="leftmenu">所有商品分类</div>
+            	<ul class="nav">
+            		<li><a href="#" class="left_1">首页</a></li>
+            		<li><a href="#">手机数码</a></li>
+            		<li><a href="#">礼品箱包</a></li>
+            		<li><a href="#">厨具用品</a></li>
+            		<li><a href="#">电脑办公</a></li>
+            		<li><a href="#">服饰鞋帽</a></li>
+            		<li><a href="#">个护化妆</a></li>
+            		<li><a href="#" class="right_1">母婴用品</a></li>
+            	</ul>
+            <!--四个小框框-->
+            <div class="hot_right">           	
+            	<dl>
+            		<dd>           		
+        				<div class="box">
+        					<span class="fang fang_1">HOT</span>
+        					<span class="jiao jiao_1"></span>
+        				</div>            		
+            			<a href="#" target="_blank">分销</a>
+            		</dd>           		
+            		<dd>
+            			<div class="box">
+        					<span class="fang fang_2">NEW</span>
+        					<span class="jiao jiao_2"></span>
+        				</div>
+            			<a href="#" target="_blank">导航</a>
+            		</dd>           		
+            		<dd>
+            			<div class="box">
+        					<span class="fang fang_3">DIY</span>
+        					<span class="jiao jiao_3"></span>
+        				</div>
+            			<a href="#">团购</a>
+            		</dd>
+            		
+            		<dd>
+            			<div class="box">
+        					<span class="fang fang_4">GO</span>
+        					<span class="jiao jiao_4"></span>
+        				</div>
+            			<a href="#" target="_blank">充值</a>
+            		</dd>           		
+            	</dl>
+            </div>
+        </div>
+    </div>
+    <!--导航结束-->
+    <!--导航下面的开始-->
+    <div class="menu_open">
+    	<div class="menu_first"></div>
+    </div>
+<!-- 以上为相同部分-->
+
+<!--内容-->
+	<div class="shopcart_bigbox">
+		<div class="shopcart_box">
+			<div class="shopcart_top"><img src="../img/cart1.gif" /></div>
+			
+			<div class="pb_whitebg" id="shopCart">
+				<table class="shopcart_ta">
+					<thead>
+						<tr>
+							<th width="38%">产品名称</th>
+							<th width="11%">市场价</th>
+							<th width="11%">商城价</th>
+							<th width="18%">数量</th>
+							<th width="11%">小计</th>
+							<th width="11%">操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td align="left">
+								<p><img src="../img/minP20160313153110796.jpg" alt="" width="55" style="vertical-align:middle;margin-right:5px;">
+								   <a href="#">【联通4G】魅蓝 metal 16G灰色 超值套装，5.5英寸 送耳机+保护套+贴膜&nbsp;&nbsp;颜色：白色</a>
+								</p>
+							</td>
+							<td>
+								<span class="special">￥1369</span>
+							</td>
+							<td><b>￥1099</b></td>
+							<td>
+								<a href="#"> 
+									<img src="../img/menu_minus.gif" alt="减少"> 
+								</a>&nbsp;&nbsp;&nbsp;
+								<input size="3" type="text" readonly="readonly" id="num" value="1">
+								&nbsp;&nbsp;&nbsp;
+								<a href="#"><img src="../img/menu_plus.gif" alr="增加"></a>									
+							</td>
+							<td><strong>￥1099</strong></td>
+							<td class="blue"><a href="#">取消订购</a>
+								
+							</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="6" align="left">
+								<p>共<b>1</b>件商品 　价格总计：<b>￥1099</b>您是 未登录用户（不享受折扣价）(不含运费)</p>
+								<a href="#"> <img src="../img/giveup.gif" alt=""></a>
+							</td>
+						</tr>
+						<tr class="qq">
+							<td colspan="6" align="right">折后价格<b>￥1099</b>&nbsp;&nbsp;获得积分：109</td>
+						</tr>
+						<tr>
+							<th colspan="6" align="right"><a href="http://www.tg0591.com/"><img src="../img/gon.gif" alt="">继续购物</a>　
+								<a href="#"><img src="../img/gomoney.gif" alt=""></a>
+							</th>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+			
+		</div>
+	</div>
+
+
+
+<!-- 以下为相同部分-->
+<!-- 底部-->
+ 	<div class="footer_box">
+ 		<div class="footer">
+ 			<!--友情连接-->
+ 			<div class="footer_top">
+ 				<span>友情链接：</psan>
+				<a target='_blank' href='http://www.jiancai0591.com'>天狗网商城</a>
+				<a target='_blank' href='http://www.jxhscjc.com/'>介休市弘盛昌家具建材装饰城</a>
+				<a target='_blank' href='http://www.jxbzmm.com'>介休鸿宪居装饰公司</a>
+				<a target='_blank' href='http://www.jxjjjcw.com'>介休家具建材网</a>
+				<a target='_blank' href='http://www.tgwlkj.com'>天狗网络科技有限公司</a>
+				<a target='_blank' href='http://jxtgwl.sitekc.com/'>天狗网络科技自助建站系统</a>
+				<a target='_blank' href='http://www.jxbgfd0591.com'>天狗网上商城</a>
+				<a target='_blank' href='http://www.jxtthg.com'>涛涛三味火锅餐饮有限公司</a>
+ 			</div>
+    		<!--客户服务热线-->
+    		<div class="footer_peo">
+    			<ul>
+    				<li class="hui"><img src="../css/img/tel.jpg" /><span>客服服务热线</span></li>
+    				<li class="hong">03547357121</li>
+    				<li class="hong">13383445351</li>
+    				<li class="hui">
+    					<img src="http://amos.alicdn.com/realonline.aw?v=2&uid=%E9%A3%9E%E5%90%91%E8%87%AA%E7%94%B1%E5%9C%B0%E6%96%B9&site=cntaobao&s=1&charset=utf-8" />
+    					<br />&nbsp;<span>(7*24小时服务)</span>
+    				</li>
+    				<li><img src="http://wpa.qq.com/pa?p=2:1253048126:51" /></li>
+    			</ul>
+    		</div>
+ 			<!--一个个列表-->
+ 			<div class="footer_list">
+ 				<ul>
+ 					<li><img src="../css/img/gu0.jpg" /><span>关于我们</span></li>
+ 					<li><a target="_blank" href="#">货源提供</a></li>
+ 					<li><a target="_blank" href="#">联系客服</a></li>
+ 					<li><a target="_blank" href="#">商城简介</a></li>
+ 				</ul>
+ 				<ul>
+ 					<li><img src="../css/img/gu1.jpg" /><span>售后服务</span></li>
+ 					<li><a target="_blank" href="#">产品退换</a></li>
+ 					<li><a target="_blank" href="#">订单查询</a></li>
+ 					<li><a target="_blank" href="#">收货说明</a></li>
+ 					<li><a target="_blank" href="#">在线旺旺客服</a></li>
+ 				</ul>
+ 				<ul>
+ 					<li><img src="../css/img/gu2.jpg" /><span>支付宝</span></li>
+ 					<li><a target="_blank" href="#">支付宝</a></li>
+ 					<li><a target="_blank" href="#">货到付款</a></li>
+ 					<li><a target="_blank" href="#">银行付款</a></li>
+ 				</ul>
+ 				<ul>
+ 					<li><img src="../css/img/gu3.jpg" /><span>购物指南</span></li>
+ 					<li><a target="_blank" href="#">购物流程</a></li>
+ 					<li><a target="_blank" href="#">常见问题</a></li>
+ 					<li><a target="_blank" href="#">会员注册</a></li>
+ 				</ul>
+ 				<ul>
+ 					<li><img src="../css/img/gu4.jpg" /><span>配送方式</span></li>
+ 					<li><a target="_blank" href="#">运费标准</a></li>
+ 					<li><a target="_blank" href="#">配送政策</a></li>
+ 					<li><a target="_blank" href="#">订单说明</a></li>
+ 				</ul>
+ 				<ul>
+ 					<li><img src="../css/img/wx.jpg" /><span>手机扫二维码登录</span></li>
+ 					<li><a target="_blank" href="#"><img src="../img/erweima.jpg" /></a></li> 					
+ 				</ul>
+ 			</div>
+ 			<!--最底端-->
+ 			<div class="footer_fo">
+ 				<p>天狗网络科技有限公司版权所有</p>
+ 				<p><a href="http://www.cnzz.com/stat/website.php?web_id=1000290534">站长统计</a></p>
+ 			</div>
+ 		</div>
+ 	</div>
+ 
+ 
+ 
+ 
+</form>
+
+	</body>
+</html>
