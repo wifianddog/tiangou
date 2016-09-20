@@ -34,5 +34,38 @@
 .zui_ne ul li i{ color: #e32a2a;}
 
 /*资讯详情右边*/
-.shopf_right{ width: 977px; height: 100px; background: darkred; float: left; margin-left: 10px; margin-top: 10px; border: 1px solid #e5e5e5;}
-.shopf_right .dang_top{ width: 977px; height: 33px;}
+.shopf_right{ width: 977px; float: left; margin-left: 10px; margin-top: 10px; border: 1px solid #e5e5e5; background: #fff;}
+.shopf_right .dang_top{ width: 962px; height: 33px; background: #ab0c06; padding-left: 15px; font-size: 14px; color: #fff; line-height: 33px;}
+.shopf_right .dang_top a{ color: #fff; padding: 0 8px;}
+.fangda{ width: 977px; height: 376px;}
+.lxzoom{ float:left; width: 276px; height: 294px; padding: 10px 60px 0 10px;}
+.lxzoom em{display: inline-block; width: 100px; height: 21px; background: url(img/fx_frend.gif); margin: 9px 0 0 38px;}
+.lxzoom i{display: inline-block; width: 100px; height: 21px; background: url(img/sc_cp.gif); margin-left: 6px;}
+
+/*//*/
+.fangda{ widows: 977px; height: 375px; border-bottom: 1px solid #e5e5e5;}
+.fangda .fangda_right{ width: 619px; height: 356px; margin: 10px 0;float: left; border-left: 1px solid #e5e5e5; padding-left: 10px;}
+.fangda .fangda_right .yaya{ display: inline-block; width: 610px; height: 40px; line-height: 40px;text-align: center; border-bottom: 1px solid #e5e5e5; font-size: 12px;}
+.fangda_right ul li{ font-size: 12px; line-height: 25px;}
+.fangda_right ul li strong{ color: #e22a25;}
+.fangda_right .yaya_1{ padding-top: 10px;}
+.fangda_right .yaya_2{ width: 409px; height: 151px; border: 1px solid #e5e5e5; margin-top: 4px;}
+.yaya_2 .span1{ display: inline-block; width: 250px; height: 20px; padding: 12px 0 0 7px;}
+.yaya_2 .span1 em{ display: inline-block; width: 40px; height: 18px; border: 1px solid #e5e5e5; margin-right: 10px; line-height: 18px; text-align: center;}
+.yaya_2 .span2{ display: inline-block; width: 400px; height: 20px; padding: 10px 0 0 7px;}
+.yaya_2 .span2 em{ display: inline-block; width: 28px; height: 18px; border: 1px solid #e5e5e5; margin-right: 10px; line-height: 18px; text-align: center;}
+.yaya_2 .span3{ display: inline-block; margin: 12px 0 0 7px;}
+.yaya_2 .span3 input{ width: 82px; height: 17px; border: 1px solid #e5e5e5;}
+.yaya_2 .span3 em{ color: #989998;}
+.yaya_2 img{ margin-left: 7px;}
+.special{ color: #989998; padding-top: 6px;}
+.special b{ font-weight: bold;}
+#ckepop{ width: 400px;}
+#ckepop a{ color: #000; display: inline-block; width: 55px;padding-left: 15px;}
+
+/*人气组合，推荐搭配*/
+.qing{ width: 977px; height: 47px; border-bottom: 2px solid #c8c8c8;}
+/*.addspan 用来做点击函数的addClass*/
+.qing span{display: inline-block; width: 84px; height: 27px; margin-top: 20px; font-size: 14px; color: #333333; line-height: 27px; text-align: center; font-weight: bold;}
+.qing .addspan{ display: inline-block; width: 84px; height: 27px; background: url(img/dzuhe.gif); margin-top: 20px; font-size: 14px; color: #fff; line-height: 27px; text-align: center; font-weight: bold;}
+.qing ul{ float:left; width: 977px; height: 233px; border: 1px solid #e6e6e6; border-top: none;}
