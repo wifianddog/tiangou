@@ -3,28 +3,25 @@
 .shopcart_bigbox{ width: 100%; background: #ededed; float: left; }
 .shopcart_box{ margin: 0 auto; width: 950px;}
 .shopcart_box .shopcart_top{padding: 18px 0 25px 117px;}
-	/*表头*/
-/*.shopcart_box .shopcart_ta{ width: 950px;}
-.shopcart_ta thead tr{ width: 948px; height: 25px; background: #f1f1f1; font-size: 12px; color: #626262;}
-.shopcart_ta thead tr th{ border: 1px solid #d5d5d5; text-align: center;}
-.shopcart_ta tbody tr{ width: 950px; height: 74px; border-bottom: 1px solid #e9e9e9;}*/
 
 /*===========我的购物车============*/
-.nologin{padding:15px 0 15px;background:#fff8d9;text-align:center;border:1px solid #febe8f;margin-bottom:10px;width:978px;margin:0 auto}
-.nologin h6{color:#ff6600;font-size:14px;padding-bottom:10px;}
+.nologin{ padding:15px 0 15px;background:#fff8d9;text-align:center;border:1px solid #febe8f;margin-bottom:10px;width:978px;margin:0 auto}
+.nologin h6{ color:#ff6600;font-size:14px;padding-bottom:10px;}
 .nologin input{ vertical-align:middle;}
-.cartposition{width:980px;margin:18px auto 10px; text-align:center;}
-.pb_whitebg{width:950px;margin:0 auto 10px;}
-.pb_whitebg table{width:100%;margin:0px auto;border-collapse:collapse;line-height:25px;text-align:center;font-family:Arial, Helvetica, sans-serif}
-.shopcart_ta thead th{background:#f1f1f1;color:#626262;font-weight:normal;border:1px solid #d5d5d5;}
-.shopcart_ta tbody td{padding:8px 0;border-bottom:1px solid #e9e9e9 ;}
+.cartposition{ width:980px;margin:18px auto 10px; text-align:center;}
+.pb_whitebg{ width:950px;margin:0 auto 10px;}
+.pb_whitebg table{ width:100%;margin:0px auto;border-collapse:collapse;line-height:25px;text-align:center;}
+.shopcart_ta thead th{ background:#f1f1f1;color:#626262;font-weight:normal;border:1px solid #d5d5d5; text-align: center;}
+.shopcart_ta tbody td{ padding:8px 0;border-bottom:1px solid #e9e9e9 ; text-align: center;}
+.shopcart_ta tbody td input{ text-align: center;}
 .shopcart_ta tbody td p{ line-height:18px;}
+.shopcart_ta tbody td p a{ color: #000;}
 .shopcart_ta tbody td p img{ float:left;margin-right:5px;}
 .shopcart_ta tbody td span{ background:url(img/blackdot.gif) repeat-x 0 9px;}
-.shopcart_ta tbody strong{color:#ff0000}
-.shopcart_ta tfoot td b{color:#ff0000}
-.shopcart_ta tfoot td{padding:8px 5px;background:#f2f4f6;}
+.shopcart_ta tbody strong{ color:#ff0000}
+.shopcart_ta tfoot td b{ color:#ff0000}
+.shopcart_ta tfoot td{ padding:8px 5px;background:#f2f4f6;}
 .shopcart_ta tfoot th{ padding-top:10px;font-weight:normal; text-align: right;}
-.qq{width:950px; text-align: right;}
+.qq td{ width:950px; text-align: right;}
 .shopcart_ta tfoot td p{ float:right;}
 .shopcart_ta tfoot th img{ vertical-align:middle;}
