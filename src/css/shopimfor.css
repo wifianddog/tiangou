@@ -17,9 +17,11 @@
 .fangda_right .yaya_1{ padding-top: 10px;}
 .fangda_right .yaya_2{ width: 409px; height: 151px; border: 1px solid #e5e5e5; margin-top: 4px;}
 .yaya_2 .span1{ display: inline-block; width: 250px; height: 20px; padding: 12px 0 0 7px;}
-.yaya_2 .span1 em{ display: inline-block; width: 40px; height: 18px; border: 1px solid #e5e5e5; margin-right: 10px; line-height: 18px; text-align: center;}
+.yaya_2 .span1 em{ display: inline-block; width: 40px; height: 18px; border: 1px solid #e5e5e5; margin-right: 10px; line-height: 18px; text-align: center; cursor:pointer; }
+/*当点击的时候背景为#d6026e*/
+.zise{background: #d6026e;}
 .yaya_2 .span2{ display: inline-block; width: 400px; height: 20px; padding: 10px 0 0 7px;}
-.yaya_2 .span2 em{ display: inline-block; width: 28px; height: 18px; border: 1px solid #e5e5e5; margin-right: 10px; line-height: 18px; text-align: center;}
+.yaya_2 .span2 em{ display: inline-block; width: 28px; height: 18px; border: 1px solid #e5e5e5; margin-right: 10px; line-height: 18px; text-align: center; cursor:pointer;}
 .yaya_2 .span3{ display: inline-block; margin: 12px 0 0 7px;}
 .yaya_2 .span3 input{ width: 82px; height: 17px; border: 1px solid #e5e5e5;}
 .yaya_2 .span3 em{ color: #989998;}

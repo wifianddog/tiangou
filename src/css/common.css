@@ -21,11 +21,13 @@
 .list_first a{ color: #000;}
 .list_first i{display:inline-block; float: left; color:#ff6600; font-size: 9px; font-weight: bold; padding-top: 4px;}
 
-.tuilist{ margin-bottom: 10px;}
+/*推荐品牌*/
+.shopf_left .tuilist{ margin-bottom: 10px; height: 275px;}
 .tuilist ul li{ float: left; padding-left: 0;}
+.tuilist ul{height: 250px;}
 
 /*最近浏览的商品*/
-#zui_box{ height: 370px;}
+#zui_box{ height: 363px; float: left;}
 .zui_top em{ padding-left: 54px; font-size: 11px;}
 .zui_ne{ float:left;width:190px; height:80px; margin: 0 9px; border-bottom: 1px solid #cdcdcd;}
 .zui_ne img{ padding-top: 18px;}
