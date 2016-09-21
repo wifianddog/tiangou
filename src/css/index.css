@@ -9,6 +9,19 @@
 .bisbox .menu_ver .last_a{ border-bottom: none; height: 2px;  background:#940206;}
 .bisbox .menu_ver .last_a:hover{background:#940206;}
 
+/*左侧导航*/
+.bisbox .menu_ver .zuoceul{ display:none; position:absolute; left:136px; top:0px; z-index: 100;}
+.bisbox .menu_ver .zuoceblock{ display: block;}
+.bisbox .menu_ver .brandtan{ width: 590px; border: 3px solid #e3001d; padding-left: 15px; font-size: 12px; line-height: 22px; background: #fff;}
+.bisbox .menu_ver .brandtan a{ display:inline-block; width: 65px; height: 22px; line-height: 22px; text-align: center; color: #404040; border-bottom: none; border-top: none; font-size: 12px; }								
+.bisbox .menu_ver .brandtan a:hover{ color: #f00;}
+.bisbox .menu_ver .brandtan strong{ color: #ee0004 ;}
+.bisbox .menu_ver .brandtan dl{ border-bottom: 1px dotted #cccccc;}
+.bisbox .menu_ver .brandtan .selectsort{ width: 395px; float: left;}
+.bisbox .menu_ver .brandtan .prdhot{ width: 155px; float: left; padding-left: 30px;}
+.bisbox .menu_ver .brandtan .prdhot dl{ border-bottom: none;}
+		/*左侧导航结束*/
+		
 .carousel .bisbox #box{ width: 1065px; height:471px; float: right; background: cornflowerblue; position: relative; overflow: hidden;}
 #list {height: 500px; position: absolute; left: 0; top: 0;}
 #list li { width: 1065px; height: 500px; float: left; }

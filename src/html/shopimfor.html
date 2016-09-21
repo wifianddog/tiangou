@@ -9,7 +9,9 @@
 		<link tyle="text/css" rel="stylesheet" href="../css/shopimfor.css" />
 		<script src="../assets/jquery-1.12.0.js"></script>
 		<script src="../js/common.js"></script>
-		<script src="../js/shopimfor.js"></script>
+		<script src="../js/shopimfor.js"></script>		
+		<script src="../js/jqueryzuo.js"></script>
+		<script src="../js/jquery.jqzoom.js"></script>		
 	</head>
 	<body>
 	<form>
@@ -243,8 +245,18 @@
 				<div class="dang_top">当前位置：<a href="#">首页</a>&gt;<a href="#">服饰鞋帽</a>&gt;<a href="#">情侣套装</a>&gt;<a href="#">情侣装</a>&gt;<a href="#">丫丫纯色系带短筒超高跟女靴</a></div>
 				
 				<div class="fangda">
-					<!--这是用来做放大镜的-->
-					<div id="box" class="lxzoom"><img src="../img/xie.jpg"><span></span><em></em><i></i></div>
+					<div class="bao">
+						<!--放大镜-->							
+						<div class="lanrenzhijia">							
+							<div id="preview" class="spec-preview"> 
+								<span class="jqzoom"><img jqimg="../img/hdP20141021163519390.jpg" src="../img/maxP20141021163519390.jpg" /></span> 
+							</div>						
+						</div>
+						<!--放大镜结束-->
+						<div class="fangf">						
+							<em></em><i></i> <!--这是下面的两个图标-->
+						</div>
+					</div>
 					<div class="fangda_right">
 						<ul>
 							<li class="yaya">丫丫纯色系带短筒超高跟女靴</li>
@@ -324,7 +336,7 @@
 	                </ul>
                 </div>
                 
-                <!--一大堆图片来袭-->
+                <!--一大堆图片来袭 -->
                 <div class="pb_coursedetail hover" id="con_one_1">
                 	<p>帮面：抗老化PU</p>
 					<p>内里：透气超纤</p>
@@ -407,7 +419,7 @@
 			</div>
 		</div>
 	</div>
-<!-- 以下为相同部分 -->
+<!-- 以下为相同部分  -->
 <!-- 底部-->
  	<div class="footer_box">
  		<div class="footer">

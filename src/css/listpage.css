@@ -5,7 +5,7 @@
 /*结束*/
 /*展开,收起*/
 .rightbox {width:980px; float:right; background-color:#FFFFFF}
-.rightbox .sx{ width:980px; overflow:hidden; margin-top:6px; background:url(../images/a1bg.jpg) left repeat-y}
+.rightbox .sx{ width:980px; overflow:hidden; margin-top:6px;}
 .rightbox .sx p.sx-hi{ height:35px; padding:0 10px; line-height:35px; border:2px solid #d1ccc7;color:#806f66; }
 .rightbox .sx .bd{ border:1px solid #d1ccc7; border-top:none; clear:both; width:978px;}
 .rightbox .sx ul li.li1{ width:100px; padding-left:10px; color:#806f66; float:left; height:40px; line-height:40px; text-align:left; background:#f7f5f6}
@@ -24,16 +24,21 @@
 .rightbox .sequence {background: #FAF4EA; border:solid #d4d4d4; border-width:2px 1px 1px 1px; height:18px; margin-top:6px; line-height:18px; padding:11px 10px; color:#333;}
 .rightbox .sequence .sel {border:1px solid #c4161c; border-right:none; background:#c4161c; color:#fff;}
 .rightbox .sequence a {border:1px solid #d4d4d4; border-right:none; background:#fff; padding:0 9px; display:block; float:left; color:#c4161c}
-.rightbox .sequence .descending a{background:url(../images/down.jpg) no-repeat 85px 3px #fff; padding-right:20px;}
-.rightbox .sequence .ascending a{background:url(../images/up.jpg) no-repeat 85px 2px #fff; padding-right:20px; border:1px solid #d4d4d4;}
+.rightbox .sequence .descending a{ padding-right:20px;}
+.rightbox .sequence .ascending a{ padding-right:20px; border:1px solid #d4d4d4;}
 
+/*懒加载部分*/
 .rightbox .commoditylist {border:1px solid #d4d4d4; border-top:none; padding:10px; line-height:24px; width:958px;}
 .rightbox .commoditylist li {float:left; width:170px; padding:9px; height:335px; overflow:hidden; }
 .rightbox .commoditylist li .pic {width:170px; height:230px; text-align:center}
 .rightbox .commoditylist li .pic img {width:170px; height:230px; border:1px solid #e7e7e7;}
 .rightbox .commoditylist li del {color:#ccc}
 .rightbox .commoditylist li .price{font-family:Georgia, "Times New Roman", Times, serif; color:#cf0f4c; font-weight:bold}
+.rightbox .commoditylist li .text{height:40px; overflow:hidden; line-height:20px;} 
 .rightbox .commoditylist li .text a {color:#333}
+.rightbox .commoditylist .blue1{color: #0066cc;}
+/*尾部*/
+
 
 .pag{ width: 900px;line-height: 20px;overflow: hidden;margin: 0 auto;margin-top: 20px; margin-bottom: 20px;clear: both;}
 .pag span, .pag a{margin-left: 5px;margin-right: 5px;border: #ccc 1px solid;padding: 0px 5px;}

@@ -1,0 +1,9 @@
+/*左侧导航*/
+.zuoceul{ display:none; position:absolute; left:136px; top:0px;}
+.brandtan{ width: 590px; border: 3px solid #e3001d; padding-left: 15px; font-size: 12px; line-height: 22px;}
+.brandtan a{ color: #404040;}
+.brandtan strong{ color: #ee0004 ;}
+.brandtan dl{ border-bottom: 1px dotted #cccccc;}
+.brandtan .selectsort{ width: 395px; float: left;}
+.brandtan .prdhot{ width: 155px; float: left; padding-left: 30px;}
+.brandtan .prdhot dl{ border-bottom: none;}

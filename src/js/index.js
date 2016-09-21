@@ -45,7 +45,38 @@ $(function(){
        			index++;
        		},6000);
       
+
+//左侧的导航
+		var $huaguo = $('.huaguo');  //a 标签
+		var $zuoceul = $('.zuoceul'); // 弹出的东西
+		var $first_tan = $('.first_tan'); //大li
+		var $menu_ver = $('.menu_ver'); //整体		
+		
+		$huaguo.on('mouseover',function(){   ///////
+			
+				$zuoceul.addClass('zuoceblock');
+				
+				$zuoceul.on('mouseout',function(){
+				
+					$zuoceul.removeClass('zuoceblock');
+				
+				}).on('mouseover',function(){
+				
+					$zuoceul.addClass('zuoceblock');
+				
+			});
+								
+			}).on('mouseout',function(){   ///////
+				
+				$zuoceul.removeClass('zuoceblock');
+				
+			});
+			
+		
+
+
+
+
+
+}); //结束
       
-      	
-      
-      });

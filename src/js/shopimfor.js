@@ -29,7 +29,9 @@ $(function(){
        		 	var idx = $(this).index();
        		 	$changli.removeClass('hover').eq(idx).addClass('hover');      		 	
        		 });
-
-
+       		 
+       		 
+//图片放大镜效果	
+		$(".jqzoom").jqueryzoom({xzoom:200,yzoom:200});
 
 });

@@ -4,10 +4,20 @@
 .shopf_right .dang_top{ width: 962px; height: 33px; background: #ab0c06; padding-left: 15px; font-size: 14px; color: #fff; line-height: 33px;}
 .shopf_right .dang_top a{ color: #fff; padding: 0 8px;}
 .fangda{ width: 977px; height: 376px;}
-.lxzoom{ float:left; width: 276px; height: 294px; padding: 10px 60px 0 10px;}
-.lxzoom em{display: inline-block; width: 100px; height: 21px; background: url(img/fx_frend.gif); margin: 9px 0 0 38px;}
-.lxzoom i{display: inline-block; width: 100px; height: 21px; background: url(img/sc_cp.gif); margin-left: 6px;}
 
+
+.bao{ float: left; width: 340px; height: 365px;}
+.fangf{ float: left; width: 276px; height: 21px; margin-top: 10px;}
+.fangf em{display: inline-block; width: 100px; height: 21px; background: url(img/fx_frend.gif); margin-left: 38px; cursor: pointer;}
+.fangf i{display: inline-block; width: 100px; height: 21px; background: url(img/sc_cp.gif); margin-left: 6px; cursor: pointer;}
+
+/*放大镜效果*/
+.lanrenzhijia{ width:352px; height:auto; margin:0 auto; overflow:hidden; margin-left: 10px; margin-top: 10px;}
+.jqzoom{float:left;border:none;position:relative;padding:0px;cursor:pointer;margin:0px;display:block;}
+.jqzoom img{ background:url(http://www.lanrenzhijia.com/demo/images/loading.gif) no-repeat center center;}
+.zoomdiv{z-index:100;position:absolute;top:0px;left:0px;width:350px;height:350px;background:#ffffff;border:1px solid #CCCCCC;display:none;text-align:center;overflow:hidden;}
+.jqZoomPup{z-index:10;visibility:hidden;position:absolute;top:0px;left:0px;width:20px;height:20px;border:1px solid #aaa;background:#ffffff /*url(../images/zoom.png) 50% center no-repeat*/;opacity: 0.5;-moz-opacity: 0.5;-khtml-opacity: 0.5;filter: alpha(Opacity=50);}
+/*放大镜效果结束*/
 /*//*/
 .fangda{ width: 977px; height: 375px; border-bottom: 1px solid #e5e5e5;}
 .fangda .fangda_right{ width: 619px; height: 356px; margin: 10px 0;float: left; border-left: 1px solid #e5e5e5; padding-left: 10px;}
