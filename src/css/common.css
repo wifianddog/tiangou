@@ -1,0 +1,35 @@
+/*列表页和商品详情页共同使用*/
+
+/*资讯详情左边*/
+.shopimforbigbox{ width: 100%; float: left; background: #ededed;}
+.shopimforbigbox .shopimforbox{ margin: 0 auto; width: 1200px;}
+
+/*畅销排行榜*/
+.shopf_left{ float:left; width: 210px; margin-top: 10px; border-top: 1px solid #e2d5bc; background: #fff;}
+.shopf_left .mianbao { padding: 10px 0;}
+.shopf_left .chanlist{ width: 208px; height: 312px;  border: 1px solid #e6e6e6; border-top:1px solid #c10001 ;}
+.shopf_left .chanlist .lala{ float:left; width:208px;height: 31px; background: #ab0c06; font-size: 14px; line-height: 31px; text-align: center; color: #fff; font-weight: bold;}
+
+.chanlist ul{ height: 282px; float: left;}
+.chanlist ul span{ color: #cc0048; font-size: 8px;}
+.chanlist ul li{ height: 40px; border-bottom: 1px solid #e6e6e6; padding-left: 7px; line-height: 40px;}
+.chanlist ul li a{ color: #000; font-size: 12px;}
+.chanlist ul .list_first{ width: 208px; height: 66px;}
+.list_first span{ display:inline-block; width: 19px; height: 66px; float: left;}
+.list_first img{ padding: 18px 11px; }
+.list_first em{ display:inline-block;width: 133px; float: right; padding-top: 8px; font-size: 12px; line-height: 18px;}
+.list_first a{ color: #000;}
+.list_first i{display:inline-block; float: left; color:#ff6600; font-size: 9px; font-weight: bold; padding-top: 4px;}
+
+.tuilist{ margin-bottom: 10px;}
+.tuilist ul li{ float: left; padding-left: 0;}
+
+/*最近浏览的商品*/
+#zui_box{ height: 370px;}
+.zui_top em{ padding-left: 54px; font-size: 11px;}
+.zui_ne{ float:left;width:190px; height:80px; margin: 0 9px; border-bottom: 1px solid #cdcdcd;}
+.zui_ne img{ padding-top: 18px;}
+.zui_ne ul{width: 133px; padding:13px 0 8px 4px; float: right;}
+.zui_ne .heise{color: #000;}
+.zui_ne ul li{ height: 20px; line-height: 20px; font-size: 12px; border-bottom: none; color: #979897;}
+.zui_ne ul li i{ color: #e32a2a;}

@@ -1,38 +1,4 @@
 
-/*资讯详情左边*/
-.shopimforbigbox{ width: 100%; float: left; background: #ededed;}
-.shopimforbigbox .shopimforbox{ margin: 0 auto; width: 1200px;}
-
-/*畅销排行榜*/
-.shopf_left{ float:left; width: 210px; margin-top: 10px; border-top: 1px solid #e2d5bc; background: #fff;}
-.shopf_left .mianbao { padding: 10px 0;}
-.shopf_left .chanlist{ width: 208px; height: 312px;  border: 1px solid #e6e6e6; border-top:1px solid #c10001 ;}
-.shopf_left .chanlist .lala{ float:left; width:208px;height: 31px; background: #ab0c06; font-size: 14px; line-height: 31px; text-align: center; color: #fff; font-weight: bold;}
-
-.chanlist ul{ height: 282px; float: left;}
-.chanlist ul span{ color: #cc0048; font-size: 8px;}
-.chanlist ul li{ height: 40px; border-bottom: 1px solid #e6e6e6; padding-left: 7px; line-height: 40px;}
-.chanlist ul li a{ color: #000; font-size: 12px;}
-.chanlist ul .list_first{ width: 208px; height: 66px;}
-.list_first span{ display:inline-block; width: 19px; height: 66px; float: left;}
-.list_first img{ padding: 18px 11px; }
-.list_first em{ display:inline-block;width: 133px; float: right; padding-top: 8px; font-size: 12px; line-height: 18px;}
-.list_first a{ color: #000;}
-.list_first i{display:inline-block; float: left; color:#ff6600; font-size: 9px; font-weight: bold; padding-top: 4px;}
-
-.tuilist{ margin-bottom: 10px;}
-.tuilist ul li{ float: left; padding-left: 0;}
-
-/*最近浏览的商品*/
-#zui_box{ height: 370px;}
-.zui_top em{ padding-left: 54px; font-size: 11px;}
-.zui_ne{ float:left;width:190px; height:80px; margin: 0 9px; border-bottom: 1px solid #cdcdcd;}
-.zui_ne img{ padding-top: 18px;}
-.zui_ne ul{width: 133px; padding:13px 0 8px 4px; float: right;}
-.zui_ne .heise{color: #000;}
-.zui_ne ul li{ height: 20px; line-height: 20px; font-size: 12px; border-bottom: none; color: #979897;}
-.zui_ne ul li i{ color: #e32a2a;}
-
 /*资讯详情右边*/
 .shopf_right{ width: 977px; float: left; margin-left: 10px; margin-top: 10px; border: 1px solid #e5e5e5; background: #fff;}
 .shopf_right .dang_top{ width: 962px; height: 33px; background: #ab0c06; padding-left: 15px; font-size: 14px; color: #fff; line-height: 33px;}
@@ -43,7 +9,7 @@
 .lxzoom i{display: inline-block; width: 100px; height: 21px; background: url(img/sc_cp.gif); margin-left: 6px;}
 
 /*//*/
-.fangda{ widows: 977px; height: 375px; border-bottom: 1px solid #e5e5e5;}
+.fangda{ width: 977px; height: 375px; border-bottom: 1px solid #e5e5e5;}
 .fangda .fangda_right{ width: 619px; height: 356px; margin: 10px 0;float: left; border-left: 1px solid #e5e5e5; padding-left: 10px;}
 .fangda .fangda_right .yaya{ display: inline-block; width: 610px; height: 40px; line-height: 40px;text-align: center; border-bottom: 1px solid #e5e5e5; font-size: 12px;}
 .fangda_right ul li{ font-size: 12px; line-height: 25px;}
@@ -68,4 +34,38 @@
 /*.addspan 用来做点击函数的addClass*/
 .qing span{display: inline-block; width: 84px; height: 27px; margin-top: 20px; font-size: 14px; color: #333333; line-height: 27px; text-align: center; font-weight: bold;}
 .qing .addspan{ display: inline-block; width: 84px; height: 27px; background: url(img/dzuhe.gif); margin-top: 20px; font-size: 14px; color: #fff; line-height: 27px; text-align: center; font-weight: bold;}
-.qing ul{ float:left; width: 977px; height: 233px; border: 1px solid #e6e6e6; border-top: none;}
+.qing ul{ float:left; width: 977px; height: 310px; border: 1px solid #e6e6e6; border-top: none; padding-top: 20px; padding-left: 14px;}
+.qing ul li{ width: 160px; padding-right: 32px; float: left;}
+.qing ul img{ padding-left: 7px;}
+.qing ul p{ font-size: 12px; padding-top: 4px; text-align: center;}
+.qing .huihui{ padding-top: 8px;color: #979797;}
+.qing ul em{ color: #ff0000;}
+
+
+/*红色点击效果 ==》 .hover 为点击时的class*/
+.pb_changetable ul{ float:left; width:958px; height:30px;background:url(img/nbg.gif) repeat-x;  background-position: bottom;padding-left:20px; border-right:1px solid #D9D9D9;border-left:1px solid #D9D9D9; padding-top:10px; margin-top: 10px;}
+.pb_changetable ul li{ float:left;width:99px;color:#333333;font-weight:bold;height:27px;text-align:center;cursor:pointer;font-size:14px;line-height:27px;margin:0px 0px 0 4px;background:url(img/dan_37.gif) no-repeat;}
+.pb_changetable ul li.hover{color:#e22927;background:url(img/dan_34.gif) no-repeat;height:30px;line-height:30px;}
+
+/*一大堆图片来袭*/
+.pb_coursedetail{ line-height:24px;padding:20px;border:1px solid #d9d9d9;border-top:none; width:938px;overflow:hidden;}
+.pb_coursedetail p{ text-align: center; color: #f00; font-family: 12px;}
+
+/*咨询内容*/
+.zixun{ float: left; width: 977px; height: 307px; border:1px solid #e6e6e6 ; position: relative;}
+.zixun .xiaohong {width: 977px; height: 38px; background: url(img/nbg.gif) repeat-x; margin-top: 10px; margin-bottom: 13px;}
+.zixun .xiaohong span{ display:inline-block; float:left; width: 96px; height: 28px; background: url(img/dan_34.gif) no-repeat; margin-left: 19px; font-size: 12px; color: #d90000; line-height: 28px; text-align: center;}
+.zixun form{}
+.zixun p{ margin-top: 10px;}
+.zixun label{ display:inline-block; width: 98px; text-align: right; float: left;}
+.zixun input{ width: 129px; height: 17px; float: left;}
+.zixun textarea{ width: 475px; height: 95px; float: left;}
+.zixun .jue{ position: absolute; left: 280px; top:210px}
+.zixun .dui{ position: absolute; right: 60px; bottom:1px}
+.zixun .duide{ position: absolute; right: 1px; bottom:1px}
+
+/*最后一个*/
+.xin{height: 400px;}
+.xin span{ margin-top:0 ;}
+.xin .qu{ float: right; padding-top: 10px;}
+.xin p{ margin-top:0 ;}
