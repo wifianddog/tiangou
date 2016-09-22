@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>tab选项卡</title>
- 	<link tyle="text/css" rel="stylesheet" href="../css/zuoce.css" /> 
- 	<link tyle="text/css" rel="stylesheet" href="../css/reset.css" /> 
- 	<link tyle="text/css" rel="stylesheet" href="../css/shopcar.css" />
- 	<link tyle="text/css" rel="stylesheet" href="../css/font-awesome.min.css.css" /> 
-	<script src="../assets/jquery-1.12.0.js"></script>
-</head>
-<script>
-	$(function(){
-		var $table = $('table');
+// 添加进购物车的商品
+$(function(){
+		var $tbody = $('tbody');
 		var $tr = $('<tr/>');
 		// 第1个td
 		var $td1 = $('<td/>');
@@ -79,36 +68,7 @@
 		$td5.appendTo($tr);
 		$td6.appendTo($tr);
 		
-		$tr.appendTo($table);
+		$tr.appendTo($tbody);
 		
 	
 	});
-</script>
-<body>
-	<table></table>
-    <!--<tr>
-		<td align="left">
-			<p><img src="../img/minP20160313153110796.jpg" alt="" width="55" style="vertical-align:middle;margin-right:5px;">
-			   <a href="#">【联通4G】魅蓝 metal 16G灰色 超值套装，5.5英寸 送耳机+保护套+贴膜&nbsp;&nbsp;颜色：白色</a>
-			</p>
-		</td>
-		
-		
-		<td>
-			<span class="special">￥1369</span>
-		</td>
-		<td><b>￥1099</b></td>
-		<td>
-			<a href="#"> <img src="../img/menu_minus.gif" alt="减少"></a>									 								
-			<input size="3" type="text" readonly="readonly" id="num" value="1">			
-			<a href="#"><img src="../img/menu_plus.gif" alr="增加"></a>									
-		</td>
-		
-		<td><strong>￥1099</strong></td>
-		
-		<td class="blue"><a href="#">取消订购</a>								
-		</td>
-	</tr>-->
-</body>
-
-</html>

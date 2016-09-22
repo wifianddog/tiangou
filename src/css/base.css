@@ -52,6 +52,43 @@
 .hot_right .box .jiao_3{ border-left-color:#9937c0;}
 .hot_right .box .jiao_4{ border-left-color:#fe7101;}
 
+/*竖直的导航栏         主页和其他页面是有点不一样的   #ededed  */
+.carousel{ width: 100%; float: left; background: #ededed;}
+.carousel .bisbox{ margin:0 auto; width: 1200px; height: 628px; background: darkseagreen; position: relative; background: url(img/huabei.png) no-repeat bottom; margin-bottom: 4px;}
+.carousel .bisbox .menu_ver{ width: 135px; height: 484px; background:#940206; position: absolute; top:-45px; padding-top:16px ;}
+ /*其他页面*/.carousel .bisbox .gaiheight{ background: #fff; border: 2px solid #940206; border-top: none;}
+.bisbox .menu_ver li{background: url(img/sideNav_bg.gif) no-repeat;}
+
+.bisbox .menu_ver  a{display:inline-block; width: 135px; height: 33px; line-height: 33px; text-align: center; font-size: 14px; color: #fff; border-bottom: 1px solid #a73033; border-top: 1px solid #880101; }
+.bisbox .menu_ver  a:hover{ color:#940206; background: #fff;}
+ /*其他页面*/.bisbox .menu_ver .huaaa{ background: #fff; color: #000; border-top:none; border-bottom: 1px solid #ccc;}
+ /*其他页面*/.bisbox .menu_ver .huaaa:hover{color: #000; border-bottom:none; border-bottom: 1px solid #e3001d; border-top:1px solid #e3001d }
+.bisbox .menu_ver .first_a{ border-top: none;}
+.bisbox .menu_ver .last:hover{  background:#940206;}
+/*其他页面*/.bisbox .menu_ver .yi{display: none; height: 0px;}
+.bisbox .menu_ver .last_a{ border-bottom: none; height: 2px; border: none;}
+.bisbox .menu_ver .last_a:hover{background: url(img/sideNav_bg.gif) no-repeat;}
+/*主页和其他页面的不同:其他页面倒数第二个不存在  这里主页不使用*/
+/*明天补充图*/
+.bisbox .menu_ver .yi{ display: none;}
+.carousel .bisbox .gaiheight{height: 465px; display: none;}
+
+				/*左侧导航*/
+.bisbox .menu_ver .zuoceul{ display:none; position:absolute; left:135px; top:0px; z-index: 100;}
+.bisbox .menu_ver .zuoceblock{ display: block;}
+.bisbox .menu_ver .brandtan{ width: 590px; border: 3px solid #e3001d; padding-left: 15px; font-size: 12px; line-height: 22px; background: #fff;}
+.bisbox .menu_ver .brandtan a{ display:inline-block; width: 65px; height: 22px; line-height: 22px; text-align: center; color: #404040; border-bottom: none; border-top: none; font-size: 12px; }								
+.bisbox .menu_ver .brandtan a:hover{ color: #f00;}
+.bisbox .menu_ver .brandtan strong{ color: #ee0004 ;}
+.bisbox .menu_ver .brandtan dl{ border-bottom: 1px dotted #cccccc;}
+.bisbox .menu_ver .brandtan .selectsort{ width: 395px; float: left;}
+.bisbox .menu_ver .brandtan .prdhot{ width: 155px; float: left; padding-left: 30px;}
+.bisbox .menu_ver .brandtan .prdhot dl{ border-bottom: none;}
+		/*左侧导航结束*/
+
+
+
+
 /*导航下面的开始*/
 .menu_open{ float:left; width: 100%; height: 43px; background:url(img/hui.png);  border-bottom: 1px solid #766362;}			
 .menu_open .menu_first{ margin: 0 auto; width: 1200px; height: 43px; background: #940206;}				
