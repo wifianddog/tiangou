@@ -12,10 +12,10 @@
 #p1 span{ font-size: 11px; color: #d90000;}
 #p6{padding-bottom: 11px;}
 #p6 input{ width: 110px;}
-#yanzheng{display: inline-block; width: 48px; height: 20px; border: 1px solid #6495ED; font-size: 14; line-height: 20px; text-align: center;}
+#yanzheng{display: inline-block; width: 48px; height: 20px; border: 1px solid #6495ED; font-size: 14; line-height: 20px; text-align: center; cursor: pointer;}
 .p7{ width: 106px; height: 30px; background: url(img/huang_left.png) no-repeat left; margin-left: 90px;}
 .p7 div{ width: 106px; height: 30px; background: url(img/huang_right.png) no-repeat right;}
-.p7 a{display:inline-block; width: 96px; height: 30px; font-size: 16px; color: #4d2f00; line-height: 30px; text-align: center; margin:0 5px; background: url(img/huang.png)}
+.p7 a{display:inline-block; width: 96px; height: 30px; font-size: 16px; color: #4d2f00; line-height: 30px; text-align: center; margin:0 5px; background: url(img/huang.png); cursor: pointer;}
 
 .p7_dl{width: 97px; height: 29px; background: url(img/lan_left.png) no-repeat left; margin-left: 90px;}
 .p7_dl div{width: 97px; height: 29px; background: url(img/lan_right.png) no-repeat right;}
