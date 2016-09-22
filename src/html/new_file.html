@@ -3,112 +3,86 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>tab选项卡</title>
- 	<link tyle="text/css" rel="stylesheet" href="../css/zuoce.css" /> 
- 	<link tyle="text/css" rel="stylesheet" href="../css/reset.css" /> 
- 	<link tyle="text/css" rel="stylesheet" href="../css/shopcar.css" />
- 	<link tyle="text/css" rel="stylesheet" href="../css/font-awesome.min.css.css" /> 
+    <title>测试页面</title>
+ 	<style>
+div {
+    border: 1px solid gray;
+    line-height: 80px;
+    font-size: 30px;
+}
+
+div input {
+    height: 40px;
+    width: 200px;
+}
+
+div span {
+    color: red;
+    
+}
+	</style>
 	<script src="../assets/jquery-1.12.0.js"></script>
 </head>
 <script>
-	$(function(){
-		var $table = $('table');
-		var $tr = $('<tr/>');
-		// 第1个td
-		var $td1 = $('<td/>');
-		var $p = $('<p/>');
-		var $img = $('<img/>');
-			$img.attr({
-				'src':'../img/minP20160313153110796.jpg',
-				'alt':' ',
-				'class':'shangimg'				
-			}).appendTo($p);
-			
-			$p.appendTo($td1);
-			
-		// 第2个td
-		var $td2 = $('<td/>');
-		$('<span/>').addClass('special').html('￥1369').appendTo($td2);
+$(function(){
 	
-		//第3个td
-		var $td3 = $('<td/>');
-		$('<b/>').html('￥1369').appendTo($td3);
+	var $dzyx = $("#dzyx");	
+	var $input1 = $("#dzyx input");
+
+	$input1.on('input',function(){
+		//var $span1 = $("#dzyx span");
 		
-		// 第4个td
-		var $td4 = $('<td/>');
-		var $aa1 = $('<a/>');
-			$aa1.attr('href','#');
-			$('<img/>').attr({
-				'src':'../img/menu_minus.gif',
-				'alt':'减少'
-				}).appendTo($aa1);
-				
-		var $input = $('<input/>');
-			$input.attr({
-				'size':'3',
-				'type':'text',
-				'readonly':'readonly',
-				'id':'num',
-				'value':'1'					
-			});
-			
-		var $aa2 = $('<a/>');
-			$aa2.attr('href','#');
-			$('<img/>').attr({
-				'src':'../img/menu_plus.gif',
-				'alt':'增加'
-				}).appendTo($aa2);
-	
-			$aa1.appendTo($td4);
-			$input.appendTo($td4);
-			$aa2.appendTo($td4);
-			
-		//第5个td
-		var $td5 = $('<td/>');
-		$('<strong/>').html('￥1099').appendTo($td5);
+		var $span1 = $(".spann");
 		
-		// 第6个td
-		var $td6 = $('<td/>');
-		$td6.addClass('blue');
-		$('<a/>').attr('href','#').appendTo($td6);
-		
-		$td1.appendTo($tr);
-		$td2.appendTo($tr);
-		$td3.appendTo($tr);
-		$td4.appendTo($tr);
-		$td5.appendTo($tr);
-		$td6.appendTo($tr);
-		
-		$tr.appendTo($table);
-		
-	
+		var str = $(this).val();
+
+		var reg = /\w+@[a-zA-Z0-9]+\.[a-zA-Z]+/;
+		// 将匹配的结果，显示到前面的标签中
+
+		var vava = reg.test(str);
+		$span1.html(vava);
 	});
+	
+	
+	
+	// ***************  用户名     *****************************
+	
+	oDiv = document.getElementById("yhm");
+	oLabel = oDiv.getElementsByTagName("label")[0];
+	oInput = oDiv.getElementsByTagName("input")[0];
+
+	// oninput 是当输入框里面的值发生改变，就会触发
+	oInput.oninput = function() {
+		oSpan = this.nextElementSibling;
+		
+		// 取出输入框的值
+		var str = this.value;
+		console.log(str);
+	var reg = /^[a-zA-Z]\w{3,19}$/;
+	oSpan.innerHTML = reg.test(str);
+		
+	}
+
+
+
+
+
+
+}); // 尾巴
 </script>
 <body>
-	<table></table>
-    <!--<tr>
-		<td align="left">
-			<p><img src="../img/minP20160313153110796.jpg" alt="" width="55" style="vertical-align:middle;margin-right:5px;">
-			   <a href="#">【联通4G】魅蓝 metal 16G灰色 超值套装，5.5英寸 送耳机+保护套+贴膜&nbsp;&nbsp;颜色：白色</a>
-			</p>
-		</td>
+	<h1>表单校验大全</h1>
+
+	<div id="yhm"> <label> 用户名<label> <input type="text" /> <span>  </span></div>
+
+	<div id="dhhm"> <label> 电话号码<label> <input type="text" /> <span>  </span></div>
+
+	<div id="dzyx"> <label> 电子邮箱<label> <input type="text" /> <span class="spann">  </span></div>
+
+	<div id="qq"> <label> QQ:<label> <input type="text" /> <span>  </span></div>
+
+	<div id="sfzh"> <label> 身份证号:<label> <input type="text" /> <span>  </span></div>
 		
-		
-		<td>
-			<span class="special">￥1369</span>
-		</td>
-		<td><b>￥1099</b></td>
-		<td>
-			<a href="#"> <img src="../img/menu_minus.gif" alt="减少"></a>									 								
-			<input size="3" type="text" readonly="readonly" id="num" value="1">			
-			<a href="#"><img src="../img/menu_plus.gif" alr="增加"></a>									
-		</td>
-		
-		<td><strong>￥1099</strong></td>
-		
-		<td class="blue"><a href="#">取消订购</a>								
-		</td>
-	</tr>-->
-</body>
+  </body>
 
 </html>

@@ -25,9 +25,10 @@ $(function(){
 // 用来点击的加入购物车
 				//点击函数
 				$("#addShopCart").click(function() {
-			// 这个是图片   $picture
+			
 					var obj = {};
 					
+			// 这个是图片   $picture		
 					obj.$picture = $('.jiatu').attr('jqimg');
 					//console.log($('.jiatu').attr('jqimg'));
 					
