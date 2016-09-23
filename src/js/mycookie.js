@@ -5,13 +5,13 @@
 //    val: cookie 的值
 //    day: 多少天以后过期
 // 返回值为空
-function addCookie(name, val, day)
+function addCookie(name, val, lu,day)
 {
 	var oDate = new Date();
 
 	oDate.setDate(oDate.getDate() + day);
 	
-	document.cookie = ""+name+"="+val+";expires=" + oDate;
+	document.cookie = ""+name+"="+val+";expires=" + oDate + ";path=/";
 }
 
 // 函数名： getCookie

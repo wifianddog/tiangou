@@ -1,4 +1,5 @@
 
+
 //************* 运动函数*********************
 // getStyle：获取对象样式对应属性的值
 	// 参数：
@@ -73,7 +74,41 @@ function startMove(obj, attr, iTarget, fn) {
 
 //显示隐藏卡片
 $(function(){
-			// 点击函数，切换版块
+	
+//  记录登录状态，当cookie中有登录成功的状态的时候，显示已登录
+		//获取cookie，并转换回数组
+		var strzt = getCookie("arrzhuangtai");
+		//var arrzt = JSON.parse(arrzt);
+		var arrzt = [];
+		if(strzt != ""){
+			arrzt = JSON.parse(strzt);
+			$('.gaizi1').html(arrzt[0].$gaizi1); 		
+			$('.gaizi3').html(arrzt[0].$gaizi3);
+			$('.zhuangtai').html(arrzt[0].$zhuangtai);
+			$('.guangli').html(arrzt[0].$guangli);
+			$('.gaizhi').html(arrzt[0].$gaizhi);
+				
+		}
+		
+		var stryong = getCookie("arryong");
+		//var arrzt = JSON.parse(arrzt);
+		var arryong = [];
+		if(stryong != ""){
+			arryong = JSON.parse(stryong);
+			console.log(arryong[0]);
+			$('.gaizi2').html(arryong[0].$yonghu);
+		}
+		
+		console.log('啦啦啦');
+		console.log(arrzt[0]);
+		
+			
+
+
+
+
+
+// 点击函数，切换版块
        		 $('.content').hide().eq(0).show();
        		 $('.header li').eq(0).addClass('active');
        		 

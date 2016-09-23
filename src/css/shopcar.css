@@ -19,6 +19,7 @@
 .shopcart_ta tbody td p a{ color: #000;}
 .shopcart_ta tbody td p img{ float:left;margin-right:5px;}
 .shopcart_ta tbody strong{ color:#ff0000}
+/*没添加之前*/
 .shopcart_ta tfoot td b{ color:#ff0000}
 .shopcart_ta tfoot td{ padding:8px 5px;background:#f2f4f6;}
 .shopcart_ta tfoot th{ padding-top:10px;font-weight:normal; text-align: right;}

@@ -199,7 +199,12 @@ $(function(){
 	$('.denglu').click(function(){
 	//获取cookie，并转换回数组
 		var strdeng = getCookie("arryong");
-		var arrdeng = JSON.parse(strdeng);
+		console.log(strdeng);
+		//var arrdeng = JSON.parse(strdeng);
+		var arrdeng = [];
+		if(strdeng != ""){
+			arrdeng = JSON.parse(strdeng);
+		}
 		
 		console.log(arrdeng);
 
@@ -236,6 +241,7 @@ $(function(){
 					obj.$zhuangtai = "退出!";  // 登录状态
 					obj.$gaizhi = "][";
 					obj.$guangli = "用户管理";  // 登录状态
+					obj.$zhekouu = "";
 					
 					//添加到数组中，然后将数组设置到 cookie 中
 						arrzhuangtai.push(obj);

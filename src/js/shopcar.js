@@ -4,7 +4,11 @@ $(function(){
 		
 		//获取cookie，并转换回数组
 		var str = getCookie("arr");
-		var arr = JSON.parse(str);
+		var arr = [];
+		//var arr = JSON.parse(str);
+		if(str != ""){
+			arr = JSON.parse(str);
+		}
 		
 		//console.log(arr[0]);
 	
