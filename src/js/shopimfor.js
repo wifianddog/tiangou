@@ -38,6 +38,8 @@ $(function(){
 					obj.$Product3 = $('.shuju1').html();
 					obj.$Price1 = $('.shuju2 span').html(); //价格
 					obj.$Price2 = $('.shuju3 strong').html();  // 商城价格
+					obj.$disblock = 'block';   // 底下 tfooter 显示
+					obj.$disnone = 'none';   // 让显示的  购物车空空如也  这块消失
 					
 			// 数量     
 					obj.$num = $('#inputnum').val();

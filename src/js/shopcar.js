@@ -11,8 +11,13 @@ $(function(){
 		}
 		
 		//console.log(arr[0]);
-	
-	
+		
+		// 让底下的tfooter 显示
+		$('.tdddiv').css('display',arr[0].$disblock);
+		// 让显示的  购物车空空如也  这块消失
+		//$('.meibian').css('display',arr[0].$disnone);
+		$('.meibian').css('display',arr[0].$disnone);
+		
 		var $tbody = $('tbody');
 		var $tr = $('<tr/>');
 		// 第1个td

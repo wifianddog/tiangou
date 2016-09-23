@@ -241,7 +241,8 @@ $(function(){
 					obj.$zhuangtai = "退出!";  // 登录状态
 					obj.$gaizhi = "][";
 					obj.$guangli = "用户管理";  // 登录状态
-					obj.$zhekouu = "";
+					obj.$zhekouu = " ";    //登录成功时把不是会员删掉==》用来清空数据
+					
 					
 					//添加到数组中，然后将数组设置到 cookie 中
 						arrzhuangtai.push(obj);

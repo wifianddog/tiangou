@@ -19,13 +19,21 @@
 .shopcart_ta tbody td p a{ color: #000;}
 .shopcart_ta tbody td p img{ float:left;margin-right:5px;}
 .shopcart_ta tbody strong{ color:#ff0000}
-/*没添加之前*/
-.shopcart_ta tfoot td b{ color:#ff0000}
-.shopcart_ta tfoot td{ padding:8px 5px;background:#f2f4f6;}
-.shopcart_ta tfoot th{ padding-top:10px;font-weight:normal; text-align: right;}
-.qq td{ width:950px; text-align: right;}
-.shopcart_ta tfoot td p{ float:right;}
-.shopcart_ta tfoot th img{ vertical-align:middle;}
+
+
+/*购物车没有东西时显示的东西       显示隐藏要改变*/
+.bianbian{ display:block ; height: 100px; line-height: 100px; width: 950px;}
+
+/*tfoot 部分              他的显示隐藏要改变，购物车没有东西时是隐藏的*/
+.tdddiv{ display:none; width: 950px; height: 125px; border-top:1px solid #e9e9e9 ;}
+.tdddiv .applebox{width: 950px; height: 82px; background: #f2f4f6;}
+.tdddiv .applebox span{ display: inline-block; width: 950px; height: 41px;}
+.tdddiv .applebox .tong p{ display: inline-block;width: 800px;height: 41px; float: right; text-align: right; font-size: 12px; line-height: 41px;}
+.tdddiv .applebox .tong p .zongji{color: #f00;}
+.tdddiv .applebox .apple img{ margin-left: 5px; margin-top: 8px;}
+.tdddiv .divth{width: 210px; float: right; padding-top: 5px;}
+.tdddiv .divth .wpp{ display: block; width: 70px; height: 16px; float: left;padding-top: 10px; color: #000;}
+.tdddiv .divth .jixu{ display: inline-block; float: right; }
 
 .blue{ color: #000;}
 .blue a { color: #000;}

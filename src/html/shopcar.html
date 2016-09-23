@@ -225,65 +225,74 @@
 
 
 <!--内容-->
-	<div class="shopcart_bigbox">
+	<div class="shopcart_bigbox clearfix">
 		<div class="shopcart_box">
 			<div class="shopcart_top"><img src="../img/cart1.gif" /></div>
 			
-			<div class="pb_whitebg" id="shopCart">
-				<table class="shopcart_ta">
-					<thead>
-						<tr>
-							<th width="38%">产品名称</th>
-							<th width="11%">市场价</th>
-							<th width="11%">商城价</th>
-							<th width="18%">数量</th>
-							<th width="11%">小计</th>
-							<th width="11%">操作</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr><td class="meibian">您的购物车还是空的，赶紧行动吧！马上去 <a style="color: red;" href="index.html">挑选商品</a></td></tr>
-						<!--<tr>
-							<td align="left">
-								<p><img src="../img/minP20160313153110796.jpg" alt="" class="shangimg">
-								   <a href="#">【联通4G】魅蓝 metal 16G灰色 超值套装，5.5英寸 送耳机+保护套+贴膜&nbsp;&nbsp;颜色：白色</a>
-								</p>
-							</td>
-							<td>
-								<span class="special">￥1369</span>
-							</td>
-							<td><b>￥1099</b></td>
-							<td>
-								<a href="#"> <img src="../img/menu_minus.gif" alt="减少"></a>									 								
-								<input size="3" type="text" readonly="readonly" id="num" value="1">			
-								<a href="#"><img src="../img/menu_plus.gif" alr="增加"></a>									
-							</td>
-							<td><strong>￥1099</strong></td>
-							<td class="blue"><a href="#">取消订购</a>								
-							</td>
-						</tr>-->
+				<div class="pb_whitebg" id="shopCart">
+					<table class="shopcart_ta">
+						<thead>
+							<tr>
+								<th width="38%">产品名称</th>
+								<th width="11%">市场价</th>
+								<th width="11%">商城价</th>
+								<th width="18%">数量</th>
+								<th width="11%">小计</th>
+								<th width="11%">操作</th>
+							</tr>
+						</thead>
+						<!--没有东西在购物车时候的状态-->
+						<tbody class="meibian">
+							<tr><td colspan="6"><div class="bianbian">您的购物车还是空的，赶紧行动吧！马上去 <a style="color: red;" href="../index.html" target="_blank">挑选商品</a></div></td></tr>
+						</tbody>
+						<tbody>
+							<!--生成html结构加入进来-->
+							<!--<tr>
+								<td align="left">
+									<p><img src="../img/minP20160313153110796.jpg" alt="" class="shangimg">
+									   <a href="#">【联通4G】魅蓝 metal 16G灰色 超值套装，5.5英寸 送耳机+保护套+贴膜&nbsp;&nbsp;颜色：白色</a>
+									</p>
+								</td>
+								<td>
+									<span class="special">￥1369</span>
+								</td>
+								<td><b>￥1099</b></td>
+								<td>
+									<a href="#"> <img src="../img/menu_minus.gif" alt="减少"></a>									 								
+									<input size="3" type="text" readonly="readonly" id="num" value="1">			
+									<a href="#"><img src="../img/menu_plus.gif" alr="增加"></a>									
+								</td>
+								<td><strong>￥1099</strong></td>
+								<td class="blue"><a href="#">取消订购</a>								
+								</td>
+							</tr>-->
+							
+							
+						</tbody>
 						
-						
-					</tbody>
-					<tfoot>
-						<tr>
-							<td colspan="6" align="left">
-								<p>共<b>1</b>件商品 　价格总计：<b class="zongji"></b>您是 未登录用户（不享受折扣价）(不含运费)</p>
-								<a href="#"> <img src="../img/giveup.gif" alt=""></a>
-							</td>
-						</tr>
-						<tr class="qq">
-							<td colspan="6" align="right">折后价格<b class="zongji"></b>&nbsp;&nbsp;获得积分：109</td>
-						</tr>
-						<tr>
-							<th colspan="6" align="right"><a href="http://www.tg0591.com/" class="blue"><img src="../img/gon.gif" alt="">继续购物</a>　
-								<a href="#"><img src="../img/gomoney.gif" alt=""></a>
-							</th>
-						</tr>
-					</tfoot>
-				</table>
-			</div>
-			
+						<tfoot>
+							<tr>						
+								<td colspan="6"  class="tdd">
+									<div class="tdddiv">  <!--最外层-->
+										<div class="applebox">
+											<span class="apple tong">
+												<p>共<b class="zongji">1</b>件商品 　价格总计：<b class="zongji"></b>&nbsp;您是 未登录用户（不享受折扣价）(不含运费)</p>
+												<a href="#"> <img src="../img/giveup.gif" alt=""></a>
+											</span>
+											<span class="banana tong">
+												<p>折后价格<b class="zongji"></b>&nbsp;&nbsp;获得积分：109</p>
+											</span>
+										</div>
+										<div class="divth">
+											<a href="http://www.tg0591.com/" class="wpp"><img src="../img/gon.gif" alt="">继续购物</a>　
+											<a href="#" class="jixu"><img src="../img/gomoney.gif" alt=""></a>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</tfoot>
+					</table>
+		    	</div>
 		</div>
 	</div>
 
