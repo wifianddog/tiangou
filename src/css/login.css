@@ -19,5 +19,5 @@
 
 .p7_dl{width: 97px; height: 29px; background: url(img/lan_left.png) no-repeat left; margin-left: 90px;}
 .p7_dl div{width: 97px; height: 29px; background: url(img/lan_right.png) no-repeat right;}
-.p7_dl a{display:inline-block; width: 90px; height: 29px; font-size: 15px; color: #fff; line-height: 29px; text-align: center; margin:0 4px 0 3px; background: url(img/lan.png)}
+.p7_dl a{display:inline-block; width: 90px; height: 29px; font-size: 15px; color: #fff; line-height: 29px; text-align: center; margin:0 4px 0 3px; background: url(img/lan.png); cursor: pointer;}
 
