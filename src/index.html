@@ -11,6 +11,7 @@
 		<script src="assets/jquery-1.12.0.js"></script>
 		<script src="js/index.js"></script>
 		<script src="js/mycookie.js"></script>
+		<script src="js/allcommon.js"></script>
 	</head>
 <body>
     <form>
@@ -19,14 +20,14 @@
         <div class="t_menu" id="shoppingCart">
         	<div class="hello">
         		<span class="gaizi1">您好：</span><span class="gaizi2"></span><span class="gaizi3">欢迎光临天狗商城！[ </span>
-        		<a href="http://www.tg0591.com/iusers/loginp.aspx" class="zhuangtai">请登录</a>
+        		<a class="tuichu" style="cursor: pointer;"> </a><a class="zhuangtai" style="cursor: pointer;">请登录</a>
         		<span class="gaizhi"> ],新用户? [ </span>
-        		<a href="http://www.tg0591.com/iusers/loginp.aspx" class="guangli">免费注册</a>
+        		<a class="guangli" style="cursor: pointer;">免费注册</a>
         		] 
         	</div>
     		<span class="shop">
     			<span class="shopleft">
-    				<a href="#">购物车<span class="red1">0</span>件</a>
+    				<a href="html/shopcar.html">购物车<span class="red1">0</span>件</a>
     			</span>
     				<a class="sub" href="#">我的订单</a>|
     				<a class="sub" href="#">网站地图</a>|
@@ -40,7 +41,7 @@
     <div class="top">
         <div class="header">
             <div class="logo">
-                <a href="htp://index.html/">
+                <a href="#">
                     <img src="img/logo.jpg" titile="天狗商城">
                 </a>
             </div>
@@ -76,7 +77,7 @@
             <div class="leftmenu">所有商品分类</div>
             	<ul class="nav">
             		<li><a href="#" class="left_1">首页</a></li>
-            		<li><a href="#">手机数码</a></li>
+            		<li><a href="html/listpage.html">手机数码</a></li>
             		<li><a href="#">礼品箱包</a></li>
             		<li><a href="#">厨具用品</a></li>
             		<li><a href="#">电脑办公</a></li>
@@ -228,8 +229,8 @@
 
 // showBtn
 // 参数：
-//          allBtn 所有的按钮
-//          index  激活按钮的下标
+//      allBtn 所有的按钮
+//      index  激活按钮的下标
 function showBtn(allBtn, index) {
 	// 清空所有按钮
 	for (var j = 0; j < allBtn.length; j++) {
@@ -316,9 +317,9 @@ onload = function() {
     		<!--右边三个小广告-->
     		<div class="guanggao">
     			<ul>
-    			<li><img src="img/guanggao.gif"/></li>
-    			<li><img src="img/guanggao.gif"/></li>
-    			<li><img src="img/guanggao.gif"/></li>
+    			<li><img src="img/zhu.jpg"/></li>
+    			<li><img src="img/midP20160322184336722.jpg"/></li>
+    			<li><img src="img/midP20130604152951152.jpg"/></li>
     			</ul>
     		</div>
     		<!--下面的商标列表-->
@@ -350,7 +351,7 @@ onload = function() {
 		        <div class="content undis">  <!--第一个-->
 	        		<dl>
 	        			<dt>
-	        				<a href="#"><img src="img/miaosha1.jpg" alt=""/></a>
+	        				<a href="#"><img src="img/miaosha4.jpg" alt=""/></a>	        				
 	        			</dt>
 	        			<dd class="prod_title">三星A7009 白，屏幕尺寸 5.5英寸，电池容量（mAh）</dd>
 	        			<dd>抢购价格：<strong>￥1335</strong>元</dd>
@@ -380,7 +381,7 @@ onload = function() {
 		        <div class="content undis">  <!--第二个-->
 	        		<dl>
 	        			<dt>
-	        				<a href="#"><img src="img/miaosha4.jpg" alt=""/></a>
+	        				<a href="html/shopimfor.html"><img src="img/maxP20141021163519390.jpg" alt="" style="width: 150px; height: 163px;"/></a>
 	        			</dt>
 	        			<dd class="prod_title">三星A7009 白，屏幕尺寸 5.5英寸，电池容量（mAh）</dd>
 	        			<dd>抢购价格：<strong>￥1335</strong>元</dd>
@@ -1029,7 +1030,7 @@ onload = function() {
 				<a target='_blank' href='http://www.tgwlkj.com'>天狗网络科技有限公司</a>
 				<a target='_blank' href='http://jxtgwl.sitekc.com/'>天狗网络科技自助建站系统</a>
 				<a target='_blank' href='http://www.jxbgfd0591.com'>天狗网上商城</a>
-				<a target='_blank' href='http://www.jxtthg.com'>涛涛三味火锅餐饮有限公司</a>
+				<a target='_blank' href='http://www.jxtthg.com'>涛三味火锅餐饮有限公司</a>
  			</div>
     		<!--客户服务热线-->
     		<div class="footer_peo">

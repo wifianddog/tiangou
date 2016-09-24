@@ -1,5 +1,15 @@
 
 $(function(){
+	
+	
+	// 当cookie中存放商品信息时，显示数量
+			var shuliang = getCookie("arr");
+		    if(shuliang != ""){
+		    	// 页面最顶端显示 商品 件数
+				$('.red1').html('1');
+		    };
+	
+	
 	// 点击展开，展开其余内容
 	var $bb = $('.bb');
 	var $bbb = $('.bbb');

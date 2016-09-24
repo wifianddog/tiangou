@@ -7,10 +7,15 @@ $(function(){
 		var arr = [];
 		//var arr = JSON.parse(str);
 		if(str != ""){
-			arr = JSON.parse(str);
-		}
+			if(str == "1")
+			{
+				return ;
+			}
 		
-		//console.log(arr[0]);
+			arr = JSON.parse(str);
+		
+		
+		console.log(arr[0]);
 		
 		// 让底下的tfooter 显示
 		$('.tdddiv').css('display',arr[0].$disblock);
@@ -30,7 +35,9 @@ $(function(){
 				'class':'shangimg'				
 			}).appendTo($p);
 			
-			$aaa = $('<a/>').html(arr[0].$Product3+'&nbsp'+arr[0].$Product1+'&nbsp'+arr[0].$Product2).appendTo($p);
+			$aaa = $('<a/>');
+			$aaa.attr('href','shopimfor.html')
+			$aaa.html(arr[0].$Product3+'&nbsp'+arr[0].$Product1+'&nbsp'+arr[0].$Product2+'&nbsp'+arr[0].$colorstr+'&nbsp'+arr[0].$sizestr).appendTo($p);
 			
 			$p.appendTo($td1);
 			
@@ -78,22 +85,8 @@ $(function(){
 		//第5个td    计算总价$$$$$$$$$$$$$$$$$$$$$$$$$
 		var $td5 = $('<td/>');
 		
+		//、、、、、、、、、、、、、、、、、、、、、、、、、、
 		
-		//  改变  input  的值 		
-		var numvalue = Number($input.attr('value'));
-	
-		// 给新建的img添加一个点击函数，***减少***数量
-		$imgjian.click(function(){
-			numvalue--;		
-			$input.val(numvalue);
-		});
-		// 给新建的img添加一个点击函数，***增加***数量
-		$imgjia.click(function(){
-			numvalue++;		
-			$input.val(numvalue)
-		});
-		
-		console.log(numvalue);
 		//  计算总价
 		var pricell = arr[0].$Price2;   //"￥111"
 			pricell = pricell.slice(1); // 切割
@@ -102,12 +95,16 @@ $(function(){
 		//var shuu = 	Number(arr[0].$num);
 		var zong = pricell * shuu;
 		
-		
+		var $pricezong = $('.pricezong');
+		$pricezong.html('￥'+zong);
+		$('.priceze').html(arr[0].$Price2);
 		
 		
 		// 计算下面的   价格总计  和  折后价格
-		$('.zongji').html('￥'+zong);
-		$('<strong/>').html(zong).appendTo($td5);
+		var $zongji = $('.zongji');
+		$zongji.html('1');
+		var $strong = $('<strong/>');
+		$strong.html('￥'+zong).appendTo($td5);
 		
 		// 页面最顶端显示 商品 件数
 		$('.red1').html('1');
@@ -125,12 +122,65 @@ $(function(){
 		$td6.appendTo($tr);
 		
 		$tr.appendTo($tbody);
+
+
+
+
+	//  改变  input  的值 	, 并计算总价	
+		var numvalue = Number($input.attr('value'));
 	
+		// 给新建的img添加一个点击函数，***减少***数量
+		$imgjian.click(function(){
+			numvalue--;
+			if(numvalue < 0){
+				numvalue = 0
+			};
+			$input.val(numvalue);			
+			var zhong = pricell * numvalue;
+				console.log(zhong);
+			$pricezong.html('￥'+zhong);
+			$strong.html('￥'+zhong);
+		});
+		// 给新建的img添加一个点击函数，***增加***数量
+		$imgjia.click(function(){
+			numvalue++;		
+			$input.val(numvalue);
+			var zhong = pricell * numvalue;
+				console.log(zhong);
+			$pricezong.html('￥'+zhong);
+			$strong.html('￥'+zhong);
+		});
 	
+
+}
+
+//  点击清除购物车按钮，清除cookie
 	
-	
-	
-	
-	
+	$('.giveup').click(function(){
+		var strqingche = getCookie("arr");
+		//var arrzt = JSON.parse(arrzt);
+		console.log(strqingche);
+		if(strqingche != ""){
+			removeCookie('arr');
+			// 要刷新才能看到效果
+			alert('成功清除购物车,请刷新!')
+		};
+
+	});
+
+
+// 判断是否登录==》是否显示   '您是 未登录用户（不享受折扣价）(不含运费)'
+
+//获取cookie，并转换回数组      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+		var strxian = getCookie("arrzhuangtai");	
+		if(strxian != ""){			
+			$('.vipp').html(' ');
+			
+			if(strxian == "1"){
+			$('.vipp').html('您是 未登录用户（不享受折扣价）(不含运费)');
+			}
+		}else{
+			$('.vipp').html('您是 未登录用户（不享受折扣价）(不含运费)');
+		};
 	
 	});

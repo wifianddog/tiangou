@@ -2,6 +2,15 @@
 
 $(function(){
 	
+//	// 当cookie中存放商品信息时，显示数量
+//			var shuliang = getCookie("arr");
+//		    if(shuliang != ""){
+//		    	// 页面最顶端显示 商品 件数
+//				$('.red1').html('1');
+//		    };
+	
+	
+	
 //1,验证码函数
 	function yangzhengma(){
 		var a = parseInt(Math.random()*10);
@@ -26,9 +35,25 @@ $(function(){
 	});
 
 
+// 获取之前所存的数据，若一样提示错误
+//获取cookie，并转换回数组
+		var strdeng = getCookie("arryong");
+		console.log(strdeng);
+		//var arrdeng = JSON.parse(strdeng);
+		var arrdeng = [];
+		if(strdeng != ""){
+			arrdeng = JSON.parse(strdeng);
+		}
+		
+		console.log(arrdeng);
+
+
+
+
 
 // 验证电子邮箱
 	var oresult1 = "";   // 用来保存判断结果,全局变量
+	var shazi = 0;
 
 	var $username = $("#username"); // input
 	var $span2 = $("#p2 span");
@@ -38,6 +63,7 @@ $(function(){
 		
 	}).on('input',function(){          // 输入时验证
 		var str = $(this).val();
+		shazi = $(this).val();
 		var reg = /\w+@[a-zA-Z0-9]+\.[a-zA-Z]+/;
 		oresult1 = reg.test(str);  	// reg.test(str) 返回 true 或 false 
 				
@@ -60,6 +86,7 @@ $(function(){
 		
 	}).on('input',function(){          // 输入时验证
 		var str = $(this).val();
+			shazi = $(this).val();
 		var reg = /^[a-zA-Z]\w{3,19}$/;
 		oresult2 = reg.test(str);  	// reg.test(str) 返回 true 或 false 
 				
@@ -144,7 +171,7 @@ $(function(){
 			var arryong = [];
 		
 
-//   绑定点击注册按钮式发生的事件
+//   绑定点击注册按钮时发生的事件
 	var $zhuce = $('.zhuce');
 	$zhuce.click(function(){
 		if(oresult1==false){
@@ -171,20 +198,47 @@ $(function(){
 //  到这里验证信息都是正确的了，接下来向cookie中提交数据
 			var obj = {};
 			obj.$youyou = $username.val();  // 邮箱
-			console.log($username.val());
+			//console.log($username.val());
 			
 			obj.$yonghu = $nickname.val();   // 用户名
-			console.log($nickname.val());
+			//console.log($nickname.val());
 			
 			obj.$passpass = $password.val();  // 密码
-			console.log($password.val());
+			//console.log($password.val());
 				//添加到数组中，然后将数组设置到 cookie 中
 				arryong.push(obj);
 				console.log(arryong);
 				// 将数组的内容设置到 cookie 中
 				addCookie("arryong", JSON.stringify(arryong));			
 	
+	
+	// 注册成功后把登录状态存入 cookie
+				var arrzhuangtai = [];
+				var obj = {};					
+					obj.$gaizi1 = "您好:";  // 前面的字==》您好:gggggg！欢迎光临天狗商城！
+					obj.$gaizi3 = "！欢迎光临天狗商城！[";					
+					obj.$zhuangtai = "退出!";  // 登录状态
+					obj.$gaizhi = "][";
+					obj.$guangli = "用户管理";  // 登录状态
+					obj.$zhekouu = " ";    //登录成功时把不是会员删掉==》用来清空数据
+					
+					
+					//添加到数组中，然后将数组设置到 cookie 中
+						arrzhuangtai.push(obj);
+						console.log(arrzhuangtai);
+						// 将数组的内容设置到 cookie 中
+						addCookie("arrzhuangtai", JSON.stringify(arrzhuangtai));			
+			
+						console.log("存入登录状态cookie成功！");
+	
 				alert("添加成功");
+				location.href = "../index.html";
+				
+				
+				
+				
+				
+				
 		
 	});//  点击注册按钮 的函数结束
 
@@ -195,7 +249,7 @@ $(function(){
 	$username_dl = $('#username_dl');
 	$password_dl = $('#password_dl');
 
-// 点击注册按钮的函数	
+// 点击登录按钮的函数	
 	$('.denglu').click(function(){
 	//获取cookie，并转换回数组
 		var strdeng = getCookie("arryong");
@@ -252,10 +306,8 @@ $(function(){
 			
 						console.log("存入登录状态cookie成功！");
 				
-				
-				
-				
-				alert("登录成功！");
+						alert("登录成功！");
+						location.href = "../index.html";
 			};
 		
 		}

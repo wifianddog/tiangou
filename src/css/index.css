@@ -9,7 +9,7 @@
 #list2 li {width: 12px; height: 12px; background: #fff; float: left; margin-left: 8px; text-allLign: center; cursor: pointer;}
 				
 /*三个小广告	*/
-.carousel .bisbox .guanggao{ width: 192px; height: 426; position: absolute; top:16px; right:0;}	
+.carousel .bisbox .guanggao{ width: 192px; height: 426; position: absolute; top:-25px; right:-120px;}	
 .bisbox .guanggao img{ margin-top: 10px; border: 1px solid #ccc;}		
 				
 /*下面的商标列表*/				
